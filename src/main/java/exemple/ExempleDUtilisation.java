@@ -1,16 +1,17 @@
-package bandeau;
+package exemple;
 
+import bandeau.Bandeau;
 import java.awt.Color;
 import java.awt.Font;
 
 public class ExempleDUtilisation {
-    private final Bandeau monBandeau = new Bandeau();
     
     public static void main(String[] args) {
 	    new ExempleDUtilisation().exemple();
     }
     
     public void exemple() {
+	Bandeau monBandeau = new Bandeau();
         Font font = monBandeau.getFont();
         Color back = monBandeau.getBackground();
         Color fore = monBandeau.getForeground();
@@ -53,6 +54,8 @@ public class ExempleDUtilisation {
 	monBandeau.setFont(font);
 	monBandeau.setForeground(fore);
 	monBandeau.setBackground(back);
-	monBandeau.setMessage("Termine");
+	monBandeau.setMessage("Terminé");
+	monBandeau.sleep(3000);
+	monBandeau.close();
    }
 }
