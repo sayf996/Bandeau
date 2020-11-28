@@ -14,13 +14,15 @@
         <exec.mainClass>exemple.ExempleDUtilisation</exec.mainClass>       
     </properties>
     <repositories>
+        <!-- Accès en lecture à la dépendance sur github packages  -->            
         <repository>
             <id>github</id>
             <name>GitHub Packages</name>
-            <url>https://maven.pkg.github.com/bastide/packages</url>
+            <url>https://bastide:f992e056b798cb423939d01576ffed72367d5091@maven.pkg.github.com/bastide/packages</url>
         </repository>
     </repositories>      
     <dependencies>
+        <!-- On configure la dépendance sur la classe "Bandeau"  -->                    
         <dependency>
             <groupId>io.github.bastide</groupId>
             <artifactId>bandeau</artifactId>
